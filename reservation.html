@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel Booking</title>
+    <link rel="stylesheet" href="reservation.css">
+   
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    
+    <div class="container">
+        <div class="form-box">
+            <form id="bookingForm">
+                <h2>Luxury Stay Booking</h2>
+                
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" id="name" required>
+                        <label for="name">Full Name</label>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="email" id="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" id="checkIn" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+                        <label for="checkIn">Check-in Date</label>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="text" id="checkOut" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+                        <label for="checkOut">Check-out Date</label>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-box">
+                        <select id="adults" required>
+                            <option value="" disabled selected>Adults</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-box">
+                        <select id="children" required>
+                            <option value="" disabled selected>Children</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <h3 class="amenities-title">Room Type</h3>
+                <div class="room-options">
+                    <div class="room-option" data-value="standard">
+                        <h4>Standard</h4>
+                        <p>$199/night</p>
+                    </div>
+                    <div class="room-option" data-value="deluxe">
+                        <h4>Deluxe</h4>
+                        <p>$299/night</p>
+                    </div>
+                    <div class="room-option" data-value="suite">
+                        <h4>Suite</h4>
+                        <p>$499/night</p>
+                    </div>
+                </div>
+                
+                <div class="amenities">
+                    <h3 class="amenities-title">Special Requests</h3>
+                    <div class="amenity-options">
+                        <div class="amenity-option" data-value="breakfast">Breakfast</div>
+                        <div class="amenity-option" data-value="spa">Spa Access</div>
+                        <div class="amenity-option" data-value="airport">Airport Transfer</div>
+                        <div class="amenity-option" data-value="earlyCheckin">Early Check-in</div>
+                        <div class="amenity-option" data-value="lateCheckout">Late Check-out</div>
+                    </div>
+                </div>
+                
+                <button type="submit">Book Now</button>
+            </form>
+            
+            <div class="confirmation" id="confirmation">
+                <h3>Booking Confirmed!</h3>
+                <p>Thank you for choosing our luxury hotel.</p>
+                <div class="booking-details" id="bookingDetails">
+                    <!-- Details will be filled by JavaScript -->
+                </div>
+                <p>A confirmation email has been sent to your email address.</p>
+                <button id="newBooking">Make Another Booking</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="reservation.js"></script>
+</body>
+</html>
