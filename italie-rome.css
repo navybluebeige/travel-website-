@@ -1,24 +1,4 @@
-/*-----------------------------------*\
- * #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
 
   --united-nations-blue: hsl(214, 56%, 58%);
   --bright-navy-blue: hsl(214, 57%, 51%);
@@ -35,9 +15,7 @@
   --onyx: hsl(0, 0%, 25%);
   --jet: hsl(0, 0%, 20%);
 
-  /**
-   * typography
-   */
+ 
 
   --ff-poppins: "Poppins", sans-serif;
   --ff-montserrat: "Montserrat", sans-serif;
@@ -56,21 +34,11 @@
   --fw-700: 700;
   --fw-800: 800;
 
-  /**
-   * transition
-   */
 
   --transition: 0.25s ease-in-out;
 
-  /**
-   * spacing
-   */
-
   --section-padding: 60px;
 
-  /**
-   * border-radius
-   */
 
   --radius-15: 15px;
   --radius-25: 25px;
@@ -81,9 +49,6 @@
 
 
 
-/*-----------------------------------*\
- * #RESET
-\*-----------------------------------*/
 
 *, *::before, *::after {
   margin: 0;
@@ -127,9 +92,6 @@ body { background: var(--white); }
 
 
 
-/*-----------------------------------*\
- * #REUSED STYLE
-\*-----------------------------------*/
 
 .container { 
   padding-inline: 15px; }
@@ -212,9 +174,6 @@ justify-content:space-between;
 
 
 
-/*-----------------------------------*\
- * #HEADER
-\*-----------------------------------*/
 
 .header {
   position: absolute;
@@ -536,11 +495,6 @@ transform: scale(1.3);
 
 
 
-
-/*-----------------------------------*\
- * #PACKAGE
-\*-----------------------------------*/
-
 .package { padding-block: var(--section-padding); }
 
 .package-list { margin-bottom: 40px; }
@@ -656,9 +610,6 @@ transform: scale(1.3);
 
 
 
-/*-----------------------------------*\
- * #GALLERY
-\*-----------------------------------*/
 
 .gallery { padding-block: var(--section-padding); }
 
@@ -690,10 +641,6 @@ transform: scale(1.3);
 
 
 
-/*-----------------------------------*\
- * #CTA
-\*-----------------------------------*/
-
 .cta {
   background: var(--bright-navy-blue);
   padding-block: var(--section-padding);
@@ -707,9 +654,6 @@ transform: scale(1.3);
 
 
 
-/*-----------------------------------*\
- * #FOOTER
-\*-----------------------------------*/
 
 .footer-top {
   background: var(--gunmetal);
@@ -837,11 +781,6 @@ address {
 
 
 
-
-/*-----------------------------------*\
- * #GO TO TOP
-\*-----------------------------------*/
-
 .go-top {
   position: fixed;
   bottom: 15px;
@@ -873,20 +812,10 @@ address {
 
 
 
-/*-----------------------------------*\
- * #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 580px screen
- */
 
 @media (min-width: 580px) {
 
-  /**
-   * REUSED STYLE
-   */
-
+ 
   .container {
     max-width: 580px;
     margin-inline: auto;
@@ -907,9 +836,7 @@ address {
 
 
 
-  /**
-   * HEADER
-   */
+ 
 
   .header { padding-top: 83px; }
 
@@ -928,9 +855,7 @@ address {
 
 
 
-  /**
-   * HERO
-   */
+  
 
   .hero {
     min-height: 800px;
@@ -941,11 +866,6 @@ address {
 
   .btn-group { gap: 20px; }
 
-
-
-  /**
-   * TOUR SEARCH
-   */
 
   .tour-search-form {
     display: grid;
@@ -964,18 +884,7 @@ address {
   }
 
 
-
-  /**
-   * POPULAR
-   */
-
   .popular-card .card-content { right: auto; }
-
-
-
-  /**
-   * FOOTER
-   */
 
   .footer .container {
     display: grid;
@@ -993,35 +902,11 @@ address {
 
 }
 
-
-
-
-
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
-  :root {
-
-    /**
-     * typography
-     */
-
+  :root { 
     --fs-5: 15px;
-
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 800px; }
 
@@ -1029,12 +914,6 @@ address {
     max-width: 60ch;
     margin-inline: auto;
   }
-
-
-
-  /**
-   * HEADER
-   */
 
   .helpline-box {
     display: flex;
@@ -1051,12 +930,6 @@ address {
 
   .social-list { gap: 10px; }
 
-
-
-  /**
-   * POPULAR
-   */
-
   .popular-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1067,12 +940,6 @@ address {
   .popular-list > li:not(:last-child) { margin-bottom: 0; }
 
   .popular-card .card-content { right: 20px; }
-
-
-
-  /**
-   * PACKAGE
-   */
 
   .package-list { margin-bottom: 50px; }
 
@@ -1094,12 +961,6 @@ address {
 
   .package-card .card-price .wrapper { margin-bottom: 15px; }
 
-
-
-  /**
-   * GALLERY
-   */
-
   .gallery { padding-bottom: calc(var(--section-padding * 2)); }
 
   .gallery-list {
@@ -1108,12 +969,6 @@ address {
   }
 
   .gallery-image { border-radius: var(--radius-25); }
-
-
-
-  /**
-   * CTA
-   */
 
   .cta .container {
     display: flex;
@@ -1124,12 +979,6 @@ address {
   .cta-content { width: calc(100% - 225px); }
 
   .cta .section-text { margin-inline: 0; }
-
-
-
-  /**
-   * FOOTER
-   */
 
   .form-wrapper {
     display: flex;
@@ -1143,28 +992,9 @@ address {
   .footer-form .btn { width: max-content; }
 
 }
-
-
-
-
-
-/**
- * responsive for larger than 992px screen
- */
-
 @media (min-width: 992px) {
 
-  /**
-   * REUSED STYLE
-   */
-
   .container { max-width: 1050px; }
-
-
-
-  /**
-   * HEADER
-   */
 
   .header.active .header-top {
     position: unset;
@@ -1220,19 +1050,8 @@ address {
   .overlay { display: none; }
 
 
-
-  /**
-   * HERO
-   */
-
   .hero .container { max-width: 740px; }
-
-
-
-  /**
-   * TOUR SEARCH
-   */
-
+  
   .tour-search-form { grid-template-columns: repeat(5, 1fr); }
 
   .tour-search .btn {
@@ -1241,37 +1060,13 @@ address {
     margin-top: 0;
   }
 
-
-
-  /**
-   * POPULAR
-   */
-
   .popular-list { grid-template-columns: repeat(3, 1fr); }
-
-
-
-  /**
-   * PACKAGE
-   */
 
   .meta-box { --fs-8: 13px; }
 
   .meta-box > ion-icon { font-size: 15px; }
 
-
-
-  /**
-   * CTA 
-   */
-
   .cta .section-title { max-width: 25ch; }
-
-
-
-  /**
-   * FOOTER
-   */
 
   .footer-top .container {
     grid-template-columns: repeat(3, 1fr);
@@ -1286,36 +1081,13 @@ address {
 
 }
 
-
-
-
-
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
 
-    /**
-     * spacing
-     */
-
-    --section-padding: 100px;
+  --section-padding: 100px;
 
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
-
   .container { max-width: 1180px; }
+
 
 }
